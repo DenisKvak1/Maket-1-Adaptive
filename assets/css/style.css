@@ -1,0 +1,145 @@
+* { 
+	box-sizing: border-box;
+	z-index: 1000;
+	font-size: 16px;
+}
+body {
+	margin:0;
+}
+
+.page1 h1{
+	margin: 0;
+}
+.title{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+	font-weight: bold;
+	font-size: 35px;
+	color: #394B4F;
+}
+.p{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	color: #394B4F;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+.wrap{
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	min-height: 100vh;
+}
+header{
+	padding: 10px 0;
+
+}
+.container-fluid{
+	gap: 20px;
+	padding: 0;
+}
+#hedaer_navbar{
+	background-color: white !important;
+	font-family: Lato;
+
+}
+#hedaer_navbar a{
+	color: #868686;
+}
+#hedaer_navbar #home_brand{
+	margin-right: auto;
+	color: white;
+	background: #F8B94D;
+	padding: 10px 20px;
+	font-size: 16px;
+}
+.page1{
+	height: 530px;	
+}
+.page1__background{
+	position: absolute;
+	z-index: 900;
+	left: 0;
+	width: 100vw;
+	height: 530px;
+	background-color: #6F97BF;
+}
+.page1__main{
+	position: relative;
+	text-align: center;
+	display: grid;
+	grid-template-rows: repeat(5, auto);
+	justify-items: center;
+}
+.page1__title{
+	padding-top: 80px;
+	grid-area: page1__title;
+	margin-bottom: 15px;
+}
+.page1 .input-group{
+	width: 85%;
+}
+.page1__title h1, .page1__title p{
+	color: white;
+}
+.page1 span{
+	color: #6E6E6E;
+	background: white !important;
+}
+.page1 input{
+	border-left: none;
+	padding-left: 0;
+}
+.page1 button{
+	width: 210px;
+	height: 45px;
+	border: none;
+	border-radius: 2.5px;
+	background-color: #F8B94D;
+	color: white;
+}
+.page1 img{
+	display: none;
+}
+.i1{
+	grid-area: i1;
+}
+.i2{
+	grid-area: i2;
+}
+.i3{
+	grid-area: i3;
+}
+.page1 img{
+	grid-area: main_img;
+}
+.page1 button{
+	grid-area: main_button;
+}
+@media (min-width: 992px) {
+	#navHeadImg{
+		flex-grow: 1;
+		
+	}
+	.page1__title{
+		padding-top: 100px;
+	}
+	.navbar-collapse{
+		flex-grow: 0;
+	}
+	header{
+		padding: 23px 0;
+		
+	}
+	.page1 img{
+		display: block;
+	}
+	.page1__main{
+		grid-template-areas: 
+		"page1__title page1__title page1__title page1__title"
+		"i1 i2 i3 main_button"
+		"main_img main_img main_img main_img";
+	}
+}
