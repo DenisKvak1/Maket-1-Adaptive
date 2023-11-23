@@ -5,12 +5,12 @@ function setVw() {
 setVw();
 window.addEventListener('resize', setVw);
 
-new WOW().init();
+
+const header = document.getElementById('header');
 function scrollToSection(sectionId) {
   const targetSection = document.getElementById(sectionId);
-  
   if (targetSection) {
-    const offsetValue =  70; 
+    const offsetValue =  header.offsetHeight+20; 
     const targetPosition = targetSection.getBoundingClientRect().top + window.scrollY - offsetValue;
 
     window.scrollTo({

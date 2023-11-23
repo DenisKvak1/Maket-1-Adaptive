@@ -5,6 +5,7 @@
 }
 body {
 	margin:0;
+	padding-top: 101px;
 }
 
 .page1 h1{
@@ -33,8 +34,13 @@ a{
 	min-height: 100vh;
 }
 header{
+	left: 0;
+	background-color: white;
+	top: 0;
 	padding: 10px 0;
-
+	position: fixed;
+	z-index: 1010;
+	width: 100%;
 }
 .container-fluid{
 	gap: 20px;
@@ -542,8 +548,7 @@ header{
 		flex-grow: 0;
 	}
 	header{
-		padding: 15px 0;
-		
+		padding: 12px 0;
 	}
 	.page1 img{
 		display: block;
