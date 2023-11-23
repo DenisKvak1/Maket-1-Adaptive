@@ -15,7 +15,7 @@
 <body>
 	<div class="container">
 		<div class="wrap">
-			<header id="header">
+			<header>
 				<div class="container">
 					<nav class="navbar navbar-expand-lg bg-body-tertiary" id="hedaer_navbar">
 						<div class="container-fluid">
@@ -60,19 +60,19 @@
 							<h1 class="title">BOOST UP YOUR LOCAL BUSINESS</h1>
 							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum typesetting</p>
 						</div>
-						<div class="input-group mb-3 i1">
+						<div class="input-group mb-3 i1" id="FN1_2">
 							<span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user Iconname"></i></span>
-							<input type="text" class="form-control" placeholder="Full Name" aria-label="Username" aria-describedby="basic-addon1">
+							<input type="text" class="form-control" placeholder="Full Name" aria-label="Username" aria-describedby="basic-addon1" id="FN1">
 						</div>
-						<div class="input-group mb-3 i2">
+						<div class="input-group mb-3 i2" id="EA1_2">
 							<span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-envelope Iconname"></i></span>
-							<input type="text" class="form-control" placeholder="Email Address" aria-label="Username" aria-describedby="basic-addon1">
+							<input type="text" class="form-control" placeholder="Email Address" aria-label="Username" id="EA1"  aria-describedby="basic-addon1">
 						</div>
-						<div class="input-group mb-3 i3">
+						<div class="input-group mb-3 i3" id="P1_2">
 							<span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-phone Iconname"></i></span>
-							<input type="text" class="form-control" placeholder="Phone" aria-label="Username" aria-describedby="basic-addon1">
+							<input type="text" class="form-control" placeholder="Phone" aria-label="Username" id="P1" required pattern="" aria-describedby="basic-addon1">
 						</div> 
-						<button>REQUEST A QUOTE</button>
+						<button onclick="RequestBTN()">REQUEST A QUOTE</button>
 						<img src="assets/images/Laptop.png" alt="">
 					</div>
 				</div>
@@ -304,7 +304,7 @@
 						</div>
 						<div class="input-group mb-3 i7_2">
 							<span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-envelope Iconname"></i></span>
-							<input type="text" class="form-control" placeholder="Email Address" aria-label="Username" aria-describedby="basic-addon1">
+							<input type="text" class="form-control" placeholder="Email Address" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" aria-label="Username" aria-describedby="basic-addon1">
 						</div>
 						<button>REQUEST A QUOTE</button>
 						<div class="img__wrap7">
