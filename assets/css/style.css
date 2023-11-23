@@ -512,6 +512,7 @@ header{
 	color: white;
 	padding: 7px 0;
 }
+
 @media (min-width: 992px) {
 	.page1__title{
 		grid-area: page1__title;
